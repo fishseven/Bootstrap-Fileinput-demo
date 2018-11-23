@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="../excel/qqq.xlsx">aaaa</a>
+
+<div id="insertBtn" class="MyCssBtn leftBtn" onclick="download();"><span>测试下载</span></div>
+</body>
+<script type='text/javascript'>
+    function download(){
+        var url = basePath+"/excelOut";  //mybatis+spring
+        url = encodeURI(url);
+        location.href = url;
+    }
+
+</script>
+</html>
